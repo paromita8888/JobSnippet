@@ -1,0 +1,77 @@
+<!----The view for the JObSnippet Controller-----!>
+
+<div id="gradientTitleBar">
+<div id="leftCorner"/></div>
+<div class="countDiv">Job Snippets</div>
+<div id="rightCorner"/></div>
+</div>
+
+
+<div class="searchSubBox">
+
+
+	<form id="jobSnippet" action="" method="post"  >
+ 
+	<table  width="100%" align="center">
+	
+		<tr>
+
+			<td colspan="12" valign="top">
+						
+			</td>
+		</tr>
+		<tr>
+			<td colspan="12"><span class="font9"></span>
+		</tr>
+	
+		<tr>
+			<td>
+				<label class="label">Entity</label><br />
+				<?php  
+				 echo $form->select('edit.entity',$entity,null,null,false); 
+			 ?> 
+              
+			</td>
+			<td colspan="2">
+				<label class="label">Print Cities</label><br />
+					<?php  
+				 echo $form->select('edit.city',$city,null,null,false); 
+			    ?> 
+			</td>
+
+			<td>&nbsp;</td>
+			<td>
+				<label class="label">Category</label><br />
+				<?php  
+				 echo $form->select('edit.category',$prcategory,null,null,false); 
+			    ?> 
+
+			</td>
+			<td>&nbsp;</td>
+
+			<td>
+				<label class="label">Ad Size</label><br />
+				<?php  
+				 echo $form->select('edit.prAds',$prAds,null,null,false); 
+			    ?> 
+			</td>
+			<td></td>
+			<td align="right">
+
+				<input type="button" value="Submit" id="submit" />
+			</td>
+		</tr>
+	    <tr><td><input type="button" value="Next" id="next" /></td><td colspan="7"><label id="labelSnippet" ><font color="red" ><-- Click on 'Save Snippets' to save selected snippets</font></label></td></tr>
+	<tr><td><label id="labelNext" ><font color="red" > Snippets inserted sucessfully</font></label></td></tr>
+	   
+		<table  width="100%" align="center" id="snippets" border="2px">
+	    <tr>
+	    </tr>
+		<table>
+		</form>
+	</td>
+	</tr>
+</table>
+
+</div>
+
